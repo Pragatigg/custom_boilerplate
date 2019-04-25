@@ -6,13 +6,15 @@ import './index.css';
 
 import * as serviceWorker from './serviceWorker';
 
+import App from 'CONTAINERS/App';
+
 /***********************************************
 * Render setup
 ************************************************/
 const MOUNT_NODE = document.getElementById('root');
 ReactDOM.render(
   <Provider store={configureStore()}>
-    <h1>Hello</h1>
+    <App/>
   </Provider>,
   MOUNT_NODE,
 );
